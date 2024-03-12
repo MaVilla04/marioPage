@@ -4,10 +4,22 @@
     box-sizing: border-box;
 }
 
+html{
+    font-family: sans-serif;
+}
+
+body {
+    background: #f1f5f9;
+}
+
+a{
+    text-decoration: none;
+}
+
 .barraNav {
     width: 100%;
     height: 100%;
-    background-color: lightblue;
+    background-color: #8b9be9;
     padding: 16px;
     margin-bottom: 12px;
     display: flex;
@@ -15,9 +27,10 @@
     align-items: center;
 }
 
-nav a {
+.barraNav a {
     font-size: large;
     font-weight: 600;
+    color: white ;
 }
 
 .mainContainer {
@@ -29,7 +42,6 @@ nav a {
 .cardContainer {
     width: 90%;
     margin: auto;
-    padding: 16px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -39,53 +51,100 @@ nav a {
 
 .carta {
     max-width: 280px;
-    height: 400px;
+    height: 550px;
     margin: 4px;
     padding: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     border: 2px solid;
+    border-radius: 8px;
 }
 
-img {
+.carta img {
     width: 200px;
 }
 
+.carta p {
+    text-align: justify;
+    hyphens: auto;
+}
+
+.carta a {
+    background: #dbeafe;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #93c5fd;
+    color: #1e293b;
+    font-weight: 600;
+}
+
 .card1 {
-    background-color: burlywood;
+    background-color: #fde68a;
+    border-color: #fbbf24;
 }
 
 .card2 {
-    background-color: mediumorchid;
+    background-color: #fb923c;
+    border-color: #ea580c;
 }
 
 .card3 {
-    background-color: mediumaquamarine;
+    background-color: #99f6e4;
+    border-color: #22d3ee;
 }
 
 .card4 {
-    background-color: yellow;
+    background-color: #fcd34d;
+    border-color: #f59e0b;
+   
 }
 
 .card5 {
-    background-color: yellowgreen;
+    background-color: #c7d2fe;
+    border-color: #818cf8;
 }
 
 .card6 {
-    background-color: peru;
+    background-color: #fca5a5;
+    border-color: #ef4444;
 }
 
 .card7 {
-    background-color: green;
+    background-color: #93c5fd;
+    border-color: #2563eb;
 }
 
 .card8 {
-    background-color: mediumslateblue;
+    background-color: #a5b4fc;
+    border-color: #6366f1;
 }
 
 .footnote {
     margin-top: 16px;
     padding: 16px;
-    background-color: aquamarine;
+    background-color: #c7d2fe;
+    color: #1e293b;
+}
+
+
+@media (max-width:425px) {
+    .carta{
+        height: 420px;
+    }
+
+    .carta img {
+        width: 120px;
+    }
+
+    .barraNav a{
+        font-size: medium;
+    }
+}
+
+@media (max-width:320px) {
+    .barraNav a{
+        font-size: small;
+    }
 }
